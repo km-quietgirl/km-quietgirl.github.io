@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head lang="ch">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="keywords" content="梁春青" />
+    <title>works</title>
+    <!--[if IE]>
+    <script>
+        alert("什么！你竟然还用IE！那你还是用手机看把！");
+    </script>
+    <![endif]-->
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/animate.css" rel="stylesheet">
+       <link href="css/simple-line-icons.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../css/prepare_style_1.css"/>
+     <link href="css/style.css" rel="stylesheet" media="screen">
+    <!--<style>
+        body,html, ul, li{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            height: 100%;
+            overflow: hidden;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #container{
+            height: 100%;
+            position: relative;
+        }
+
+        .ta-c{
+            text-align: center;
+        }
+
+        .section {
+            background-color: #000;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        #pre_section{
+            background-color: #142441;
+        }
+
+        #section0 {
+            background-image: radial-gradient(#2E4369,#142441);
+        }
+
+       #works {
+            background-image: radial-gradient(#134b70,#1a315f);
+        }
+
+        #section2 {
+            background-image: radial-gradient(#3B7E9D,#075f88);
+        }
+
+        #section3 {
+            background-color: #178bc1;
+        }
+        #section4 {
+            background-color: #0098dd;
+        }
+
+        /* 内部 */
+        .content{
+            position: absolute;
+            left: 50%;
+            top: 15px;
+            -webkit-transform: translate3D(-50%, 0, 0);
+            color: #fff;
+            width: 70%;
+        }
+        @media screen and (min-width: 960px){
+            .content{width: auto}
+        }
+        /* section 0 */
+        .head-icon{
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            -webkit-transform-style:preserve-3d;
+        }
+        .head-icon div{
+            position: absolute;
+            background: transparent url("image/head-icon.png") no-repeat;
+            background-size: 100px 100px;
+            -webkit-transition: 1.5s all ease 0.5s;
+        }
+        .active .head-icon div{
+            -webkit-transform: translate3d(0,0,0)!important;
+            opacity: 1!important;
+        }
+
+        .name{
+            opacity: 0;
+            text-align: center;
+        }
+        .active .name{
+            -webkit-animation: ele-show 0.5s ease-in-out 1.5s forwards;
+        }
+
+        .ele{
+            opacity: 0;
+        }
+        .ele0, .ele10, .ele14, .ele17, .ele20, .ele21, .ele40{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .active .ele0{
+            -webkit-animation: ele-right 0.5s ease-in-out 1.5s forwards;
+        }
+        .active .ele1{
+            -webkit-animation: ele-right 0.5s ease-in-out 1.7s forwards;
+        }
+        .active .ele2{
+            -webkit-animation: ele-right 0.5s ease-in-out 1.9s forwards;
+        }
+        .active .ele3{
+            -webkit-animation: ele-right 0.5s ease-in-out 2.1s forwards;
+        }
+        .active .ele4{
+            -webkit-animation: ele-right 0.5s ease-in-out 2.3s forwards;
+        }
+        .active .ele5{
+            -webkit-animation: ele-right 0.5s ease-in-out 2.5s forwards;
+        }
+        .layer{
+            width: 100%;
+        }
+        .ele01, .ele02, .ele03, .ele04, .ele05{
+            position: absolute;
+            background: url("image/m-animate-1-imp.32.png");
+        }
+        .ele01{
+            background-position: -404px -115px;
+            width: 38px;
+            height: 28px;
+            top: 277px;
+            right: 50px;
+        }
+        .ele02{
+            background-position: -448px 0;
+            width: 18px;
+            height: 18px;
+            top: 460px;
+            left: 70px;
+        }
+        .ele03{
+            background-position: -627px -17px;
+            width: 15px;
+            height: 15px;
+            top: 192px;
+            left: 64px;
+        }
+        .ele04{
+            background-position: -370px -115px;
+            width: 33px;
+            height: 29px;
+            top: 480px;
+            right: 50px;
+        }
+        .ele05{
+            background-position: -448px 0;
+            width: 18px;
+            height: 18px;
+            top: 157px;
+            left: 100px;
+        }
+
+        /* section 1 */
+        .ele11:before, .ele12:before, .ele13:before{
+            opacity: 0;
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: -8px;
+            width: 36px;
+            height: 36px;
+            background: url("image/css_skill.png");
+            background-size: 108px 36px;
+        }
+        
+
+        /* 页面元素 */
+        .next-arr{
+            background-image: url(image/down-arr.png);
+            width: 24px;
+            height: 18px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate3D(-50%, 0, 0);
+            -webkit-animation: arr-down 1.5s .2s infinite;
+        }
+        .music{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background-image: url("image/music.png");
+            background-position: -2px 0;
+            width: 30px;
+            height: 33px;
+        }
+        .music.off{
+            background-position: -33px 0;
+        }
+        #bgm{
+            display: none;
+        }
+        @-webkit-keyframes ele-right{
+            0%{
+                opacity: 0;
+                -webkit-transform: translate3D(-40px, 0, 0);
+            }
+            90%{
+                opacity: 1;
+                -webkit-transform: translate3D(5px, 0, 0);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+        }
+        @-webkit-keyframes ele-down{
+            0%{
+                opacity: 0;
+                -webkit-transform: translate3D(0, -40px, 0);
+            }
+            90%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, 5px, 0);
+            }
+            
+            100%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+        }
+        @-webkit-keyframes ele-up{
+            0%{
+                opacity: 0;
+                -webkit-transform: translate3D(0, 40px, 0);
+            }
+            90%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, -5px, 0);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+        }
+
+        @-webkit-keyframes arr-down{
+            0%{
+                opacity: 0;
+                -webkit-transform: translate3D(-50%, -50px, 0);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: translate3D(-50%, 0, 0);
+            }
+        }
+
+        @-webkit-keyframes ele-show{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes scale-big{
+            0%{
+                opacity: 0;
+                -webkit-transform: scale(0.1);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: scale(1.2);
+            }
+        }
+
+        @-webkit-keyframes sea-show{
+            0%{
+                opacity: 0;
+                -webkit-transform: translate3D(0, 100%, 0);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+        }
+
+        @-webkit-keyframes sea-float{
+            0%{
+                -webkit-transform: translate3D(0, 0px, 0);
+            }
+            50%{
+                -webkit-transform: translate3D(0, 10px, 0);
+            }
+            100%{
+                -webkit-transform: translate3D(0, 20px, 0);
+            }
+        }
+
+        @-webkit-keyframes boat-show{
+            0%{
+                opacity: 0;
+                -webkit-transform: rotate(-40deg) translate3D(-100%, 0, 0);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: rotate(0deg) translate3D(-50%, 0, 0);
+            }
+        }
+        @-webkit-keyframes cloud-move-left{
+            0%{
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+            100%{
+                -webkit-transform: translate3D(-500px, 0, 0);
+            }
+        }
+        @-webkit-keyframes cloud-move-right{
+            0%{
+                -webkit-transform: translate3D(0, 0, 0);
+            }
+            100%{
+                -webkit-transform: translate3D(500px, 0, 0);
+            }
+        }
+        @media screen and (min-width: 960px){
+            .active .cloud-0{
+                -webkit-animation: cloud-move-left 60s linear 0.2s infinite;
+            }
+            .active .cloud-1{
+                -webkit-animation: cloud-move-left 80s linear 0.1s infinite;
+            }
+            .active .cloud-2{
+                -webkit-animation: cloud-move-right 100s linear 0.4s infinite;
+            }
+            @-webkit-keyframes cloud-move-left{
+                0%{
+                    -webkit-transform: translate3D(0, 0, 0);
+                }
+                100%{
+                    -webkit-transform: translate3D(-2000px, 0, 0);
+                }
+            }
+            @-webkit-keyframes cloud-move-right{
+                0%{
+                    -webkit-transform: translate3D(0, 0, 0);
+                }
+                100%{
+                    -webkit-transform: translate3D(2000px, 0, 0);
+                }
+            }
+        }
+
+        #back{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 80px auto;
+            background-color: #fff;
+            position: relative;
+        }
+        #back a{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #0097d4;
+            line-height: 80px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>-->
+    <style>
+    	.music{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background-image: url("image/music.png");
+            background-position: -2px 0;
+            width: 30px;
+            height: 33px;
+        }
+        .music.off{
+            background-position: -33px 0;
+        }
+        #works {
+            background-image: radial-gradient(#134b70,#1a315f);
+        }
+        #backing{
+        	position: absolute;
+        	right: 5px;
+        	color: #000;
+        	font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+<audio id="bgm" src="music/bgm.mp3" loop="loop" preload="auto" autoplay="autoplay"></audio>
+<div id="container">
+    
+    
+    <!--<div class="section" id="section1">
+        <div class="music"></div>
+        <section class="content">
+            
+        </section>
+        
+    </div>-->
+    <section id="works" class="pfblock">
+    	<div class="music"></div>
+    <div class="container">
+    	
+        <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+
+                <div class="pfblock-header wow fadeInUp">
+                    <h2 class="pfblock-title">My works</h2>
+                    <div class="pfblock-line"></div>
+                    <div class="pfblock-subtitle">
+                        前端学习的不同阶段所做的小作品，在日后学习中还有待不断的改进和完善...
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <!--<div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="https://Gwemz.github.io/wuziqi" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/wuziqi.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>五子棋游戏</span></h2>
+                                <p>该游戏涉及canvas画布的应用</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>-->
+            <!--微信小程序-->
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="javascript:;" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/wchat.png" alt="加载失败"/>
+                            <figcaption>
+                                <h2><span>微信小程序</span></h2>
+                                <p>微信开发</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+
+            <!--icloud-->
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+            <div class="grid wow zoomIn">
+                <a href="http://km-quietgirl.github.io/icloud" target="_blank">
+                    <figure class="effect-bubba">
+                        <img src="images/icloud.png" alt="加载失败"/>
+                        <figcaption>
+                            <h2><span style="text-transform:Lowercase">iCloud</span></h2>
+                            <p style="text-transform:Lowercase">angular应用</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+        </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/music.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>音乐播放器</span></h2>
+                                <p>Audio相关属性方法和事件的应用</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/apple" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/apple.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>苹果官网</span></h2>
+                                <p>CSS3动画效果以及响应式的应用</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/todo" target="_blank" style="display: block;">
+                        <figure class="effect-bubba">
+                            <img src="images/todo.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span style="text-transform:Lowercase">todo应用</span></h2>
+                                <p>移动端应用的练习</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/baidu" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/baidu.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>百度舆情</span></h2>
+                                <p>fullpage的应用</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/jd" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/jd.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>京东首页</span></h2>
+                                <p>页面布局以及jquery动态效果实现</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/yintai" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/yt.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>银泰首页</span></h2>
+                                <p>页面布局以及JavaScript动态效果的实现</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="grid wow zoomIn">
+                    <a href="http://km-quietgirl.github.io/gm" target="_blank">
+                        <figure class="effect-bubba">
+                            <img src="images/gm.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>国美首页</span></h2>
+                                <p>页面布局以及JavaScript动态效果的实现</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div>
+    	<a href="../../index.html" id="backing">返回首页</a>
+    </div>
+
+</section>
+    
+   
+    
+</div>
+
+
+
+
+<script src="../../js/zepto.min.js"></script>
+<script src="../../js/prepare.js"></script>
+<script src="../../js/jquery.parallax.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    document.body.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, false);
+
+    var curIndex = 0;
+    var container = $("#container");
+    var sections = null;
+    var sumCount = null;
+    var $window = $(window);
+    var duration = 500;
+    var aniTime = 0;
+    var $loading = $("#loading");
+    var $loadings = $loading.find("span");
+    var $headIcon = $("#head-icon");
+
+    var scrollFunc = function (e) {
+        if(new Date().getTime() < aniTime + duration){
+            return;
+        }
+        e = e || window.event;
+        var t = 0;
+        if (e.wheelDelta) {//IE/Opera/Chrome
+            t = e.wheelDelta;
+            move(-t);
+        } else if (e.detail) {//Firefox
+            t = e.detail;
+            move(t);
+        }
+    };
+
+    /* flag > 0 向下， flag < 0 向上*/
+    function move(flag){
+        aniTime = new Date().getTime();
+        if(flag > 0 && curIndex < sumCount - 1){
+            curIndex++;
+            container.css({
+                "transform": "translate3D(0, -" + curIndex * $window.height() + "px, 0)",
+                "-webkit-transform": "translate3D(0, -" + curIndex * $window.height() + "px, 0)"
+            });
+        }else if(flag < 0 && curIndex > 0){
+            curIndex--;
+            container.css({
+                "transform": "translate3D(0, -" + curIndex * $window.height() + "px, 0)",
+                "-webkit-transform": "translate3D(0, -" + curIndex * $window.height() + "px, 0)"
+            });
+        }
+        sections.each(function(){
+            $(this).removeClass("active");
+        }).eq(curIndex).addClass("active");
+    }
+
+    //进入
+    function init(){
+        sections = $(".section");
+        sumCount = sections.length;
+
+        var pm = new PrepareManager("preSection");
+        var downloadQueue = ["image/css_skill.png","image/down-arr.png","image/head-icon.png","image/music.png","image/sea_0.png","image/sea_1.png"
+            ,"image/sea_2.png","image/sea_all_icon.png", "image/m-animate-1-imp.32.png"];
+        pm.prepare(downloadQueue, "bgm", function(){
+            sections.eq(0).addClass("active");
+            //简单的手机处理
+            $window.on("swipeDown", function(){
+                move(-1);
+            }).on("swipeUp", function(){
+                move(1);
+            });
+            /*注册事件*/
+            if (document.addEventListener) {
+                document.addEventListener('DOMMouseScroll', scrollFunc, false);
+            }//W3C
+            window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome
+        });
+
+        container.css({
+            "transition": "all 0.5s",
+            "-moz-transition": "all 0.5s",
+            "-webkit-transition": "all 0.5s"
+        });
+
+        chipIn($headIcon[0], 10, 10);
+
+        $('#scene').parallax();
+    }
+
+    function chipIn(oDiv, C, R){
+        //容器的中心点X坐标（相对于容器的左上角）
+        var divCX = oDiv.offsetWidth / 2;
+        //容器的中心点Y坐标（相对于容器的左上角）
+        var divCY = oDiv.offsetHeight / 2;
+
+        for (var i = 0; i < R; i++) {
+            for (var j = 0; j < C; j++) {
+                var oNewDiv = document.createElement('div');
+
+                //接下来给 oNewDiv 设置初始状态
+                var w=Math.floor(oDiv.offsetWidth/C);  //小块的宽度
+                var h=Math.floor(oDiv.offsetHeight/R); //小块的高度
+                var offsetLeft = j*w; //新元素的left值
+                var offsetTop = i*h;  //新元素的top值
+                var l=offsetLeft+w/2; // 新元素的中心点x坐标（相对于容器的左上角）
+                var t=offsetTop+h/2;  // 新元素的中心点y坐标（相对于容器的左上角）
+                //容器中心点到新元素中心点向量（简化形式）
+                var disX=l-divCX;  //初始的translateX值
+                var disY=t-divCY;  //初始的translateY值
+                oNewDiv.style.width=w+'px';
+                oNewDiv.style.height=h+'px';
+                oNewDiv.style.left = offsetLeft + 'px';  //新元素的left值
+                oNewDiv.style.top = offsetTop + 'px';    //新元素的top值
+                oNewDiv.style.backgroundPosition = '-'+offsetLeft+'px -'+offsetTop+'px';  //背景位置
+                oNewDiv.style.WebkitTransform='perspective(800px) translate3d('+disX+'px, '+disY+'px, 600px) rotateY('+rnd(-180, 180)+'deg) rotateX('+rnd(-180, 180)+'deg) scale(2,2)';  //初始的transform值
+                oNewDiv.style.opacity=0;    //初始的透明度为0
+                oDiv.appendChild(oNewDiv);
+            }
+        }
+
+        function rnd(n, m)
+        {
+            return parseInt(Math.random()*(m-n)+n);
+        }
+    }
+
+    init();
+</script>
+</body>
+</html>
